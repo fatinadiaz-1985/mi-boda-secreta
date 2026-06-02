@@ -1,10 +1,205 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Mi primera web</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi boda secreta</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family: Georgia, serif;
+      background:#f8f1e7;
+      color:#5a1f1f;
+    }
+
+    /* NAV */
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:15px 30px;
+      background:rgba(248,241,231,0.95);
+      position:sticky;
+      top:0;
+      border-bottom:1px solid rgba(90,31,31,0.2);
+    }
+
+    nav h2{
+      margin:0;
+      font-size:20px;
+    }
+
+    nav a{
+      margin-left:15px;
+      text-decoration:none;
+      color:#5a1f1f;
+      font-weight:bold;
+      font-size:14px;
+    }
+
+    /* HERO */
+    header{
+      text-align:center;
+      padding:60px 20px 20px;
+    }
+
+    h1{
+      font-size:52px;
+      margin-bottom:10px;
+    }
+
+    .subtitle{
+      max-width:750px;
+      margin:0 auto;
+      font-size:18px;
+      font-style:italic;
+      line-height:1.6;
+    }
+
+    /* IMAGE */
+    .hero-img{
+      display:flex;
+      justify-content:center;
+      margin:30px 0;
+    }
+
+    .hero-img img{
+      width:320px;
+      border-radius:15px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    /* SECTIONS */
+    section{
+      max-width:900px;
+      margin:40px auto;
+      padding:0 20px;
+    }
+
+    .card{
+      background:rgba(255,255,255,0.6);
+      padding:25px;
+      border-radius:15px;
+      margin-bottom:20px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    h2{
+      margin-top:0;
+    }
+
+    /* TAG */
+    .tag{
+      display:inline-block;
+      padding:4px 10px;
+      background:#5a1f1f;
+      color:white;
+      border-radius:20px;
+      font-size:12px;
+      margin-bottom:10px;
+    }
+
+    /* COMMENT BOX */
+    textarea, input{
+      width:100%;
+      padding:10px;
+      margin-top:8px;
+      border-radius:8px;
+      border:1px solid rgba(90,31,31,0.3);
+      font-family:inherit;
+    }
+
+    button{
+      margin-top:10px;
+      padding:10px 15px;
+      background:#5a1f1f;
+      color:white;
+      border:none;
+      border-radius:8px;
+      cursor:pointer;
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      font-size:13px;
+      opacity:0.7;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Hola mundo 👋</h1>
-  <p>Estoy creando mi primera web desde cero</p>
+
+<nav>
+  <h2>💍 Mi boda secreta</h2>
+  <div>
+    <a href="#inicio">Inicio</a>
+    <a href="#problemas">Problemas</a>
+    <a href="#consejos">Consejos</a>
+    <a href="#comunidad">Comunidad</a>
+  </div>
+</nav>
+
+<header id="inicio">
+  <h1>Mi boda secreta 💍</h1>
+  <p class="subtitle">
+    Una esquina íntima donde compartir secretos, trucos y desahogos mientras organizamos el día más feliz de nuestra vida.  
+    Porque detrás de cada boda perfecta… hay caos, emoción y mucha magia silenciosa.
+  </p>
+</header>
+
+<div class="hero-img">
+  <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=600&q=80" alt="novios"/>
+</div>
+
+<section id="problemas">
+
+  <div class="card">
+    <span class="tag">Problema</span>
+    <h2>Familia opinando demasiado</h2>
+    <p>Todo el mundo quiere decidir tu boda menos tú.</p>
+    <p><b>Solución:</b> decidir en pareja y comunicarlo como algo ya cerrado.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Problema</span>
+    <h2>Presupuesto que se dispara</h2>
+    <p>Empiezas con una idea sencilla y acabas en modo “lujo inesperado”.</p>
+    <p><b>Solución:</b> fijar límite y restar antes de añadir.</p>
+  </div>
+
+</section>
+
+<section id="consejos">
+
+  <div class="card">
+    <h2>✨ Consejo importante</h2>
+    <p>
+      No intentes que todo sea perfecto. Las bodas más bonitas son las más auténticas, no las más caras.
+    </p>
+  </div>
+
+</section>
+
+<section id="comunidad">
+
+  <div class="card">
+    <h2>💬 Comunidad</h2>
+    <p>Comparte tu experiencia (esto luego lo haremos con comentarios reales):</p>
+
+    <input type="text" placeholder="Tu nombre"/>
+    <textarea rows="4" placeholder="Tu experiencia..."></textarea>
+    <button onclick="alert('Luego lo conectamos a comentarios reales 😉')">
+      Publicar
+    </button>
+  </div>
+
+</section>
+
+<footer>
+  Hecho con amor para novias reales 🤍
+</footer>
+
 </body>
 </html>
