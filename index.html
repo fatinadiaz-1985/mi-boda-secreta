@@ -10,7 +10,7 @@
       margin:0;
       font-family: Georgia, serif;
       background:#f8f1e7;
-      color:#5a1f1f;
+      color:#111; /* negro */
     }
 
     /* NAV */
@@ -20,111 +20,97 @@
       align-items:center;
       padding:15px 30px;
       background:rgba(248,241,231,0.95);
+      border-bottom:1px solid rgba(0,0,0,0.1);
       position:sticky;
       top:0;
-      border-bottom:1px solid rgba(90,31,31,0.2);
     }
 
     nav h2{
       margin:0;
-      font-size:20px;
+      font-size:18px;
+      color:#111;
     }
 
     nav a{
       margin-left:15px;
       text-decoration:none;
-      color:#5a1f1f;
-      font-weight:bold;
+      color:#111;
+      font-weight:500;
       font-size:14px;
     }
 
     /* HERO */
     header{
       text-align:center;
-      padding:60px 20px 20px;
+      padding:70px 20px 20px;
     }
 
     h1{
-      font-size:52px;
+      font-size:54px;
       margin-bottom:10px;
+      color:#d18aa5; /* rosa elegante */
+      letter-spacing:1px;
     }
 
     .subtitle{
-      max-width:750px;
+      max-width:800px;
       margin:0 auto;
       font-size:18px;
-      font-style:italic;
-      line-height:1.6;
+      line-height:1.7;
+      color:#111;
     }
 
-    /* IMAGE */
+    /* IMAGEN GRANDE */
     .hero-img{
+      width:100%;
       display:flex;
       justify-content:center;
-      margin:30px 0;
+      margin:40px 0;
     }
 
     .hero-img img{
-      width:320px;
-      border-radius:15px;
-      box-shadow:0 10px 25px rgba(0,0,0,0.2);
+      width:80%;
+      max-width:900px;
+      height:auto;
+      border-radius:20px;
+      box-shadow:0 15px 40px rgba(0,0,0,0.15);
     }
 
-    /* SECTIONS */
+    /* SECCIONES */
     section{
       max-width:900px;
-      margin:40px auto;
+      margin:50px auto;
       padding:0 20px;
     }
 
     .card{
-      background:rgba(255,255,255,0.6);
+      background:#fff;
       padding:25px;
       border-radius:15px;
       margin-bottom:20px;
-      box-shadow:0 8px 20px rgba(0,0,0,0.08);
+      box-shadow:0 8px 25px rgba(0,0,0,0.08);
     }
 
     h2{
       margin-top:0;
+      color:#111;
     }
 
-    /* TAG */
     .tag{
       display:inline-block;
       padding:4px 10px;
-      background:#5a1f1f;
+      background:#d18aa5;
       color:white;
       border-radius:20px;
       font-size:12px;
       margin-bottom:10px;
     }
 
-    /* COMMENT BOX */
-    textarea, input{
-      width:100%;
-      padding:10px;
-      margin-top:8px;
-      border-radius:8px;
-      border:1px solid rgba(90,31,31,0.3);
-      font-family:inherit;
-    }
-
-    button{
-      margin-top:10px;
-      padding:10px 15px;
-      background:#5a1f1f;
-      color:white;
-      border:none;
-      border-radius:8px;
-      cursor:pointer;
-    }
-
     footer{
       text-align:center;
-      padding:30px;
+      padding:40px;
       font-size:13px;
-      opacity:0.7;
+      color:#444;
     }
   </style>
 </head>
@@ -132,7 +118,7 @@
 <body>
 
 <nav>
-  <h2>💍 Mi boda secreta</h2>
+  <h2>Mi boda secreta</h2>
   <div>
     <a href="#inicio">Inicio</a>
     <a href="#problemas">Problemas</a>
@@ -142,15 +128,16 @@
 </nav>
 
 <header id="inicio">
-  <h1>Mi boda secreta 💍</h1>
+  <h1>Mi boda secreta</h1>
+
   <p class="subtitle">
-    Una esquina íntima donde compartir secretos, trucos y desahogos mientras organizamos el día más feliz de nuestra vida.  
-    Porque detrás de cada boda perfecta… hay caos, emoción y mucha magia silenciosa.
+    Una pequeña esquina íntima donde compartir secretos, trucos y desahogos mientras organizamos el día más feliz de nuestra vida.  
+    Detrás de cada boda perfecta hay decisiones, emociones y momentos que nadie ve.
   </p>
 </header>
 
 <div class="hero-img">
-  <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=600&q=80" alt="novios"/>
+  <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1200&q=80" alt="novios"/>
 </div>
 
 <section id="problemas">
@@ -158,15 +145,15 @@
   <div class="card">
     <span class="tag">Problema</span>
     <h2>Familia opinando demasiado</h2>
-    <p>Todo el mundo quiere decidir tu boda menos tú.</p>
-    <p><b>Solución:</b> decidir en pareja y comunicarlo como algo ya cerrado.</p>
+    <p>Todo el mundo quiere decidir por ti.</p>
+    <p><b>Solución:</b> decidir en pareja y comunicarlo como algo definitivo.</p>
   </div>
 
   <div class="card">
     <span class="tag">Problema</span>
     <h2>Presupuesto que se dispara</h2>
-    <p>Empiezas con una idea sencilla y acabas en modo “lujo inesperado”.</p>
-    <p><b>Solución:</b> fijar límite y restar antes de añadir.</p>
+    <p>Empiezas con una idea sencilla y acabas gastando mucho más.</p>
+    <p><b>Solución:</b> fijar límites claros desde el principio.</p>
   </div>
 
 </section>
@@ -174,9 +161,9 @@
 <section id="consejos">
 
   <div class="card">
-    <h2>✨ Consejo importante</h2>
+    <h2>Consejo importante</h2>
     <p>
-      No intentes que todo sea perfecto. Las bodas más bonitas son las más auténticas, no las más caras.
+      No busques una boda perfecta. Busca una boda que se sienta tuya.
     </p>
   </div>
 
@@ -185,12 +172,12 @@
 <section id="comunidad">
 
   <div class="card">
-    <h2>💬 Comunidad</h2>
-    <p>Comparte tu experiencia (esto luego lo haremos con comentarios reales):</p>
+    <h2>Comunidad</h2>
+    <p>Comparte tu experiencia (próximamente comentarios reales):</p>
 
     <input type="text" placeholder="Tu nombre"/>
     <textarea rows="4" placeholder="Tu experiencia..."></textarea>
-    <button onclick="alert('Luego lo conectamos a comentarios reales 😉')">
+    <button onclick="alert('Próximamente comentarios reales 😉')">
       Publicar
     </button>
   </div>
@@ -198,7 +185,7 @@
 </section>
 
 <footer>
-  Hecho con amor para novias reales 🤍
+  Hecho con calma, amor y un poco de caos 💗
 </footer>
 
 </body>
